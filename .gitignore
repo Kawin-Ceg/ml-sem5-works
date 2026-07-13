@@ -1,0 +1,131 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Compiled Extensions
+*.so
+
+# =========================
+# Virtual Environments
+# =========================
+venv/
+.venv/
+env/
+ENV/
+virtualenv/
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# PyCharm
+# =========================
+.idea/
+
+# =========================
+# macOS
+# =========================
+.DS_Store
+
+# =========================
+# Windows
+# =========================
+Thumbs.db
+Desktop.ini
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# Python Testing
+# =========================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# =========================
+# Type Checking
+# =========================
+.mypy_cache/
+.pyre/
+.ruff_cache/
+
+# =========================
+# Distribution
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# Machine Learning Models
+# =========================
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.keras
+*.onnx
+*.pt
+*.pth
+*.ckpt
+
+# =========================
+# TensorBoard
+# =========================
+runs/
+tensorboard_logs/
+
+# =========================
+# Data Files (Optional)
+# Uncomment if datasets are large
+# =========================
+# data/
+# datasets/
+# *.csv
+# *.xlsx
+# *.parquet
+
+# =========================
+# Generated Outputs
+# =========================
+outputs/
+results/
+predictions/
+models/
+checkpoints/
+
+# =========================
+# Temporary Files
+# =========================
+*.tmp
+*.temp
+*.swp
+
+# =========================
+# Cache
+# =========================
+.cache/
