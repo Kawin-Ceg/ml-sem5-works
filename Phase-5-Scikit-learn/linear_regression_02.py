@@ -1,8 +1,8 @@
 import numpy as np
 
-X = np.array([[1,1000],[1,1200],[1,1500],[1,1800],[1,2000]],dtype=float)
+X = np.array([[1,1],[1,2],[1,3],[1,4],[1,5],[1,6]],dtype=float)
 
-Y = np.array([[30],[35],[45],[60],[55]],dtype=float)
+Y = np.array([[3],[5],[7],[9],[11],[13]],dtype=float)
 
 print("X:", X.shape)
 print("Y:", Y.shape)
@@ -14,6 +14,3 @@ XTY = X.T @ Y
 theta = inverse @ XTY
 print("Coefficients (theta):", theta)
 
-new_house = np.array([[1,1700]])
-prediction = new_house @ theta
-print("Prediction for new house:", prediction)

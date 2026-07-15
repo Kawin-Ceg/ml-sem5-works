@@ -1,7 +1,7 @@
 import numpy as np; 
 
-x = np.array([1000,1200,1500,1800,2000],dtype=float)
-y = np.array([30,35,45,50,60],dtype=float)
+x = np.array([1,2,3,4,5,6],dtype=float)
+y = np.array([3,5,7,9,11,13],dtype=float)
 
 # calculated the mean of x and y 
 x_mean = np.mean(x)
@@ -19,11 +19,14 @@ a = (xy_mean - x_mean*y_mean) / (x2_mean - x_mean**2)
 b = y_mean - a*x_mean
 
 
-print("Coefficient a:", a)
-print("Coefficient b:", b)
+print("Coefficient a:", round(a,4))
+print("Coefficient b:", round(b,4))
 
-# new prediction for x = 1700
-x_new = 1700
 
-prediction = a*x_new + b
-print("Prediction for x = 1700:", prediction)
+x_new = 7
+y_new = 10 
+
+prediction_1 = a*x_new + b
+prediction_2 = a*y_new + b
+print("Prediction for x = 7:", round(prediction_1,4))
+print("Prediction for x = 10: ",round(prediction_2,4))

@@ -2,14 +2,15 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 
 X = np.array([
-    [1000],
-    [1200],
-    [1500],
-    [1800],
-    [2000]
+    [1],
+    [2],
+    [3],
+    [4],
+    [5],
+    [6]
 ])
 
-Y = np.array([30,35,45,55,60])
+Y = np.array([3,5,7,9,11,13])
 
 model = LinearRegression()
 model.fit(X,Y)
@@ -18,9 +19,6 @@ model.fit(X,Y)
 print("Coefficients:", model.coef_)
 
 # value of b is the intercept of the model
-print("Intercept:", model.intercept_)
+print("Intercept:", round(model.intercept_,4))
 
-new_house = np.array([[1700]])
-
-prediction = model.predict(new_house)
-print("Prediction for new house:", prediction)
+print(f"Y = {round(model.coef_[0],4)}X + {round(model.intercept_,4)}")
