@@ -9,9 +9,6 @@ from sklearn.metrics import (
 )
 
 
-
-# Dataset 3
-
 X = np.array([
     [2,60],
     [3,65],
@@ -32,12 +29,12 @@ Y = np.array([
 ])
 
 
-# Create model
+
 
 model = LinearRegression()
 
 
-# Train
+
 
 model.fit(X,Y)
 
@@ -52,18 +49,14 @@ print("Coefficients:",
 
 
 
-# Prediction
 
 Y_pred=model.predict(X)
-
 
 
 print("\nPredictions:")
 print(Y_pred)
 
 
-
-# Metrics
 
 print("\nMAE:",
       mean_absolute_error(Y,Y_pred))

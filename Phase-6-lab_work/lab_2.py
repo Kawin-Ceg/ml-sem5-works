@@ -1,8 +1,5 @@
 import numpy as np
 
-
-# Dataset
-
 X = np.array([
     [2,60],
     [3,65],
@@ -11,7 +8,6 @@ X = np.array([
     [6,80],
     [7,85]
 ])
-
 
 Y = np.array([
     40,
@@ -22,10 +18,6 @@ Y = np.array([
     78
 ])
 
-
-
-# Add bias column
-
 X_matrix = np.column_stack(
     (
         np.ones(len(X)),
@@ -35,30 +27,19 @@ X_matrix = np.column_stack(
 
 
 
-# Matrix solution
-
 theta = np.linalg.inv(
     X_matrix.T @ X_matrix
 ) @ X_matrix.T @ Y
-
 
 
 print("Coefficients:")
 print(theta)
 
 
-
-# Predictions
-
 Y_pred = X_matrix @ theta
-
 
 print("\nPredicted Marks:")
 print(Y_pred)
-
-
-
-# Metrics
 
 
 mae = np.mean(

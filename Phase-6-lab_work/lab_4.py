@@ -1,7 +1,6 @@
 import numpy as np
 
 
-# Dataset
 
 X = np.array([
     [1,1],
@@ -20,9 +19,6 @@ Y = np.array([
     3.8
 ])
 
-
-# Linear Regression Formula
-# theta = (X.T X)^-1 X.T Y
 
 
 theta = np.linalg.inv(

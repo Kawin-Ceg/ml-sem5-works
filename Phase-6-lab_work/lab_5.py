@@ -1,11 +1,7 @@
 import numpy as np
-
 from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import Ridge
 
-
-
-# Dataset
 
 X = np.array([
     [1,1],
@@ -26,9 +22,6 @@ Y = np.array([
 
 
 
-# -------------------------------
-# Linear Regression
-# -------------------------------
 
 linear_model = LinearRegression(
     fit_intercept=False
@@ -45,9 +38,6 @@ print(linear_model.coef_)
 
 
 
-# -------------------------------
-# Ridge Regression
-# -------------------------------
 
 ridge_model = Ridge(
     alpha=1,
